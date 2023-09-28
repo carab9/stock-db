@@ -50,6 +50,14 @@ Class diagram
 
 ![image](https://github.com/carab9/stock-db/blob/main/stockdb_class_diagram.jpg?raw=true)
 
+## Requirements
+
+C++ and C++ libararies: fstream, sstream.
+
+## Techical Skills:
+
+C++, C++ templates, data structures: stack, linked list, hash table, binary search tree (insert, delete and search operations)
+
 ## Results
 
 Main menu
