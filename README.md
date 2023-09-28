@@ -1,12 +1,12 @@
 # stock-db
 
-This project is a stock database management tool using a list of data structures such as templated binary search tree, hash table, linked list, and stack. The main program reads a stock database text file (stocksDB.txt) creates a list of Stock class objects, and inserts the pointers of the Stock objects into two data structures: a BinarySearchTree and a HashTable. Then the program displays the main menu with several options for users to manage the stock database. 
+This project is a stock database management tool using a list of data structures such as templated binary search tree, hash table, linked list, and stack. The main program reads a stock database text file (stocksDB.txt), creates a list of Stock class objects, and inserts the pointers of the Stock objects into two data structures: a BinarySearchTree and a HashTable. Then it displays the main menu with several options for users to manage the stock database. 
 
 The BinarySearchTree (BST) orders the Stock objects by their company names, and the HashTable indexes the Stock objects by the unique key for a stock, that is, the stock symbol plus the date. There are two ways to search the StockDB database from the main menu. One way is by company name, hence the BST will be used to search, and the other way is by stock symbol and date, hence the HashTable will be used to search. The HashTable uses LinkedList to resolve conflicts.
 
-Whe a Stock gets deleted, its pointer is stored in a Stack class object, so there is a chance to undo the delete. The HashTable will automatically rehash the size if its load factor is greater than 75%.
+When a Stock gets deleted, its pointer is stored in a Stack class object, so there is a chance to undo the delete. The HashTable will automatically rehash the size if its load factor is greater than 75%.
 
-The Stock objects get deleted when the main StockDB object's destructor is called during the shutdown of the main program. The HashTable destructor is called inside the StockDB destruture and it will acutally delete the Stock objects. Also the Stock objects (from menu's delete a stock option) saved in the Stack object will also be deleted in the destructor of StockDB to free up the memory.
+The Stock objects get deleted when the main StockDB object's destructor is called during the shutdown of the main program. The HashTable destructor is called inside the StockDB destructor and it will delete the Stock objects. Also, the Stock objects (from the menu's delete a stock option) saved in the Stack object will be deleted in the destructor of StockDB to free up the memory.
 
 The main menu options:
 
