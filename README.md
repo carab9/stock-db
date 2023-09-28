@@ -56,7 +56,7 @@ C++ and C++ libararies: fstream, sstream.
 
 ## Techical Skills:
 
-C++, C++ templates, data structures: stack, linked list, hash table, binary search tree (insert, delete and search operations) file IO.
+C++, C++ templates, data structures: stack, linked list, hash table, binary search tree (insert, delete and search operations), file IO and string parsing using sstream.
 
 ## Results
 
